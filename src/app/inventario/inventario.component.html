@@ -1,0 +1,18 @@
+<div class="container">
+  <br>
+  <nav>
+    <button class="btn btn-primary" routerLink="lista" 
+      [@animacion]="estado1" 
+      (mouseenter)="estado1='active'"
+      (mouseleave)="estado1='inactive'"
+    >Lista</button>
+    <button class="btn btn-primary" routerLink="detalle"
+      [@animacion]="estado2" 
+      (mouseenter)="estado2='active'"
+      (mouseleave)="estado2='inactive'"
+    >detalle</button>
+  </nav>
+  <br>
+</div>
+
+<router-outlet></router-outlet>
