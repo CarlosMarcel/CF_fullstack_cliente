@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(
     private router: Router,
-    private auth: AuthService
+    public auth: AuthService
   ){}
 
   Login(){
