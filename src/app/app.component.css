@@ -2,3 +2,8 @@
     position: absolute;
     right: 10px;
 }
+
+.name{
+    color: white;
+    font-weight: 800;
+}
