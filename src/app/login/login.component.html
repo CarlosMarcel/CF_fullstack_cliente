@@ -11,7 +11,7 @@
                 <label for="user">Usuario:</label>
                 <input type="text" class="form-control" id="user" formControlName="user">
                 <div *ngIf="form.controls.user.errors && form.controls.user.touched">
-                    <div class="alert alert-danger" *ngIf="form.controls.user.errors.required">
+                    <div class="danger" *ngIf="form.controls.user.errors.required">
                         El usuario es requerido
                     </div>
                 </div>
@@ -21,13 +21,13 @@
                     <label for="pass">Password:</label>
                     <input type="text" class="form-control" id="pass" formControlName="pass">
                     <div *ngIf="form.controls.pass.errors && form.controls.pass.touched">
-                        <div class="alert alert-danger" *ngIf="form.controls.pass.errors.required">
+                        <div class="danger" *ngIf="form.controls.pass.errors.required">
                             La contraseña es requerida
                         </div>
                     </div>
                 </div>
 
-                <div class="alert alert-danger" *ngIf="error">
+                <div class="danger" *ngIf="error">
                     El nombre o contraseña son incorrectos
                 </div>
 

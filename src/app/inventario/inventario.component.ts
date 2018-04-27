@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 export class InventarioComponent implements OnInit {
   estado1 = "inactive";
   estado2 = "inactive";
+  estado3 = "inactive";
   constructor() { }
 
   ngOnInit() {
