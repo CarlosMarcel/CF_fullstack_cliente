@@ -8,7 +8,8 @@ import { slide } from './animations';
 @Component({
   selector: 'inventario-lista',
   templateUrl: './inventario-lista.component.html',
-  animations: [slide]
+  animations: [slide],
+  styleUrls: ['./inventario.component.css']
 })
 export class InventarioListaComponent implements OnInit {
 

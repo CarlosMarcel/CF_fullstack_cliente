@@ -21,7 +21,7 @@ export class AppComponent {
 
   Logout(){
     this.auth.logout();
-    let link = ['/home'];
+    let link = ['/login'];
     this.router.navigate(link);
   }
 }

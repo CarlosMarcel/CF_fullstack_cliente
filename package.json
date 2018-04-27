@@ -25,7 +25,6 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "angular2-materialize": "^15.1.10",
-    "bootstrap": "^4.0.0-beta.3",
     "core-js": "^2.4.1",
     "express": "^4.16.2",
     "font-awesome": "^4.7.0",

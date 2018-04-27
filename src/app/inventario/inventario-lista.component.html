@@ -1,11 +1,8 @@
 <div class="container">
-    <div class="card">
-        <div class="card-header">
-            Lista de Productos
-        </div>
-        <div class="card-block">
-            <table class="table table-hover responsive-table">
-                <thead class="thead-default">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <table class="bordered highlight responsive-table">
+                <thead>
                     <tr>
                         <th>Id</th>
                         <th>Producto</th>
@@ -22,11 +19,12 @@
                         <td>{{ item.precio }}</td>
                         <td>{{ item.proveedor }}</td>
                         <td>
-                            <button class="btn btn-sm btn-primary" (click)="editar(item)">
-                               <i class="fa fa-pencil fa-fw"></i>Editar</button>
-                            
-                            <button class="btn btn-sm btn-danger red" (click)="borrar(item)">
-                                <i class="fa fa-trash-o fa-fw"></i>Borrar</button>
+                            <a id="btn-tabla" class="waves-effect waves-light btn indigo" (click)="editar(item)">
+                                <i class="material-icons">create</i>
+                            </a>
+                            <a id="btn-tabla" class="waves-effect waves-light btn red" (click)="borrar(item)">
+                                <i class="material-icons">delete_forever</i>
+                            </a>
                         </td>
                     </tr>
                 </tbody>
