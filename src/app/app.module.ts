@@ -19,7 +19,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
-import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { MaterializeModule } from 'angular2-materialize';
 
 import * as $ from 'jquery';
@@ -38,7 +37,6 @@ import * as $ from 'jquery';
     HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    Ng2SmartTableModule,
     InventarioModule,
     MaterializeModule
   ],
