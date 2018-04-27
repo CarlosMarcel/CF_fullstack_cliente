@@ -14,8 +14,7 @@ const inventarioRoutes: Routes = [
         {path: '', redirectTo: 'lista', pathMatch: 'full'},
         {path: 'lista', component: InventarioListaComponent},
         {path: 'detalle', component: InventarioDetalleComponent},
-        {path: 'detalle/:id', component: InventarioDetalleComponent},
-        { path: '**',    component: HomeComponent }
+        {path: 'detalle/:id', component: InventarioDetalleComponent}
     ]},
 ];
 
