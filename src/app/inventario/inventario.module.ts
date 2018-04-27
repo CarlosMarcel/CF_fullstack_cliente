@@ -11,20 +11,16 @@ import { InventarioService } from './inventario.service.service';
 import { InventarioRoutingModule } from './inventario-routing.module';
 
 import {AuthGuard} from '../login/auth.guard';
-import { SmartTableComponent } from './smart-table.component';
-import { Ng2SmartTableModule } from 'ng2-smart-table';
 @NgModule({
     declarations: [
         InventarioComponent,
         InventarioListaComponent,
-        InventarioDetalleComponent,
-        SmartTableComponent
+        InventarioDetalleComponent
     ],
     imports: [
         CommonModule,
         ReactiveFormsModule,
         HttpModule,
-        Ng2SmartTableModule,
         InventarioRoutingModule
     ],
     exports: [
