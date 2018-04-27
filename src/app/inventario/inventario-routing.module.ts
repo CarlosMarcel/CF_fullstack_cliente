@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {InventarioComponent} from './inventario.component';
 import {InventarioListaComponent} from './inventario-lista.component';
 import {InventarioDetalleComponent} from './inventario-detalle.component';
+import { SmartTableComponent } from './smart-table.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { AuthGuard } from '../login/auth.guard';
 const inventarioRoutes: Routes = [
@@ -13,7 +15,8 @@ const inventarioRoutes: Routes = [
         {path: '', redirectTo: 'lista', pathMatch: 'full'},
         {path: 'lista', component: InventarioListaComponent},
         {path: 'detalle', component: InventarioDetalleComponent},
-        {path: 'detalle/:id', component: InventarioDetalleComponent}
+        {path: 'detalle/:id', component: InventarioDetalleComponent},
+        {path: 'tablasmart', component: SmartTableComponent}
     ]},
 ];
 
