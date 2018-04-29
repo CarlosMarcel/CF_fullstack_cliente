@@ -1,6 +1,20 @@
 <div class="container">
-  <br>
-  <div class="default">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-lista-tab" data-toggle="tab" routerLink="lista" href="#nav-lista" role="tab"
+            aria-controls="nav-lista" aria-selected="true">Lista</a>
+          <a class="nav-item nav-link" id="nav-detalle-tab" data-toggle="tab" routerLink="detalle" href="#nav-detalle" role="tab" aria-controls="nav-detalle"
+            aria-selected="false">Detalle</a>
+        </div>
+      </nav>
+      <br>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-lista" role="tabpanel" aria-labelledby="nav-lista-tab"></div>
+        <div class="tab-pane fade" id="nav-detalle" role="tabpanel" aria-labelledby="nav-detalle-tab"></div>
+      </div>
+
+  <!-- <div class="default">
     <button class="btn btn-primary" routerLink="lista" 
       [@animacion]="estado1" 
       (mouseenter)="estado1='active'"
@@ -11,8 +25,9 @@
       (mouseenter)="estado2='active'"
       (mouseleave)="estado2='inactive'"
     >detalle</button>
-  </div>
-  <br>
+  </div>-->
 </div>
+
+
 
 <router-outlet></router-outlet>
