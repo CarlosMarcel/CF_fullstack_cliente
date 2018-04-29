@@ -16,10 +16,11 @@ import { InventarioModule } from './inventario/inventario.module';
 import { InventarioService } from './inventario/inventario.service.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
 
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
-import { MaterializeModule } from 'angular2-materialize';
 
 import * as $ from 'jquery';
 
@@ -38,7 +39,8 @@ import * as $ from 'jquery';
     AppRoutingModule,
     BrowserAnimationsModule,
     InventarioModule,
-    MaterializeModule
+    NgbModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

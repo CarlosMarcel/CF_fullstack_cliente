@@ -6,8 +6,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { InventarioValidator } from './inventario.validator';
 import { Inventario } from './inventario';
 import { slide } from './animations';
-import { MaterializeModule } from 'angular2-materialize';
-import { toast } from 'angular2-materialize';
 
 @Component({
   selector: 'inventario-detalle',
@@ -98,7 +96,7 @@ export class InventarioDetalleComponent implements OnInit {
     this.service.addInventario(inventario).subscribe(
       rt => console.log(rt),
       er => console.log(er),
-      () => toast('El producto se ha registrado exitosamente!', 4000)
+      () => console.log('El producto se ha registrado exitosamente!')
       
     );
   }
@@ -106,7 +104,7 @@ export class InventarioDetalleComponent implements OnInit {
   updateInventario(inventario: Inventario){
     if(!inventario) return;
     this.service.putInventario(inventario).subscribe(rt => console.log(rt),er => console.log(er), () => this.goLista());
-    toast('El producto se ha actualizado exitosamente!', 4000);
+    console.log('El producto se ha registrado exitosamente!')
   }
 
   goLista(){
