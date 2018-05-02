@@ -66,7 +66,7 @@ export class InventarioDetalleComponent implements OnInit {
   crearControles(){
     this.form = this.fb.group({
       id: ['', Validators.required, InventarioValidator.valorUnico(this.service)],
-      producto: ['', Validators.compose([Validators.required,Validators.maxLength(10)])],
+      producto: ['', Validators.compose([Validators.required,Validators.maxLength(50)])],
       existencia: ['', Validators.required],
       precio: ['', Validators.required],
       proveedor: ['', Validators.required]
